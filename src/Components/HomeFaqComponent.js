@@ -27,8 +27,6 @@ export default function HomeFaqComponent() {
                     </div>
                 </Container>
             </section>
-            <div className='border-area bw-0'></div>
-            <div className='border-area'></div>
         </>
     )
 }

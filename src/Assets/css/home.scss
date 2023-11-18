@@ -20,6 +20,9 @@
 
     .container {
         height: calc(100vh - 65px);
+        @media (max-width: 700px){
+            height: auto;
+        }
     }
 
     .banner_content {
@@ -34,23 +37,52 @@
             max-width: 80%;
             line-height: 5.5rem;
             margin-bottom: 1.5rem;
+
+            @media (max-width: 575px){
+                max-width: 100%;
+                font-size: 2rem;
+                line-height: 3rem;
+            }
         }
 
         .second-title {
             margin-bottom: 2rem;
+            text-align: center;
+            @media (max-width: 575px){
+                max-width: 100%;
+                font-size: 1.8rem;
+                line-height: 2rem;
+            }
+        }
+
+        p{
+            text-align: center;
+            @media (max-width: 575px){
+                max-width: 100%;
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+            }
         }
 
 
         .signinform {
             margin-top: 2.5rem;
         }
+
+        @media (max-width: 700px){
+            height: auto;
+        }
+    }
+
+    @media (max-width: 700px){
+        height: auto;
+        padding: 9rem 0 4rem;
     }
 }
 
 
 // Content Box CSS
 .content_box {
-
     // tv frame
     .tv {
         max-width: 80%;
@@ -72,6 +104,11 @@
             video {
                 width: 100%;
             }
+        }
+
+        @media (max-width: 700px) {
+            margin: 2rem auto 0;  
+            max-width: 70%;          
         }
     }
 
@@ -129,6 +166,10 @@
                 transform: translateY(-50%);
             }
         }
+
+        @media (max-width: 700px) {
+            margin-bottom: 4rem;          
+        }
     }
 
     // devices frame
@@ -153,6 +194,11 @@
                 width: 100%;
             }
         }
+
+        @media (max-width: 700px) {
+            margin: 2rem auto 0;  
+            max-width: 70%;          
+        }
     }
 
     // kids frame
@@ -165,12 +211,23 @@
             position: relative;
             z-index: 1;
         }
+
+        @media (max-width: 700px) {
+            margin: 0 auto;
+            margin-bottom: 4rem;          
+        }
+    }
+
+    &.last-item{
+        border-bottom: 8px solid $secondBgs;
     }
 }
 
 
 // FAQ Section CSS
 .faq_section {
+    padding: 7rem 0;
+    border-bottom: 8px solid $secondBgs;
     .content-title {
         margin-bottom: 3.5rem;
     }

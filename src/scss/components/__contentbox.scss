@@ -1,19 +1,43 @@
 @import '../layouts/_mixins';
 .content_box {
-    min-height: 350px;
+    border-top: 8px solid $secondBgs;
+    border-width: 8px 0;
+    padding: 7rem 0;
 
     .content-title {
         margin-bottom: 2rem;
         font-weight: 600;
         line-height: 5rem;
         max-width: 76%;
+
+        @media (max-width: 990px) {
+            max-width: 100%;
+            line-height: 3.9rem;
+        }
+
+        @media (max-width: 700px){
+            width: 100%;
+            text-align: center;
+        }
     }
 
     p {
         font-size: 1.8rem;
+        @media (max-width: 990px) {
+            font-size: 1.6rem;
+        }
+        @media (max-width: 700px){
+            text-align: center;
+        }
     }
 
     .content_area{
         @include dflex_params(inline-flex,flex-start,center,column)
+    }
+
+    @media (max-width: 700px) {
+        .row{
+            display: block;
+        }
     }
 }

@@ -14,7 +14,6 @@ import kids from '../Assets/images/kids.png';
 export default function HomeHighLightsComponent() {
     return (
         <>
-            <div className='border-area'></div>
             <section className='content_box'>
                 <Container>
                     <Row>
@@ -35,7 +34,6 @@ export default function HomeHighLightsComponent() {
                     </Row>
                 </Container>
             </section>
-            <div className='border-area'></div>
             <section className='content_box'>
                 <Container>
                     <Row>
@@ -61,8 +59,6 @@ export default function HomeHighLightsComponent() {
                     </Row>
                 </Container>
             </section>
-            <div className='border-area bottom'></div>
-            <div className='border-area bw-0'></div>
             <section className='content_box'>
                 <Container>
                     <Row>
@@ -83,8 +79,7 @@ export default function HomeHighLightsComponent() {
                     </Row>
                 </Container>
             </section>
-            <div className='border-area'></div>
-            <section className='content_box'>
+            <section className='content_box last-item'>
                 <Container>
                     <Row>
                         <Col>
@@ -99,8 +94,6 @@ export default function HomeHighLightsComponent() {
                     </Row>
                 </Container>
             </section>
-            <div className='border-area bottom'></div>
-            <div className='border-area bw-0'></div>
         </>
     )
 }
