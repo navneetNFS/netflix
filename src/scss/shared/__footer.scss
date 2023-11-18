@@ -3,6 +3,12 @@ footer{
         color: rgba(255,255,255,0.7);
     }
 
+    p{
+        @media (max-width: 575px){
+            margin-bottom: 2rem;
+        }
+    }
+
     ul{
         margin: 1.5rem 0 3rem;
         li{
@@ -10,6 +16,10 @@ footer{
             a{
                 font-size: 1.4rem;
             }
+        }
+
+        @media (max-width: 575px){
+            margin: 0;
         }
     }
 
@@ -19,5 +29,9 @@ footer{
 
     .netflix_loc{
         font-size: 1.4rem;
+        @media (max-width: 575px){
+            margin-top: 2.5rem;
+            display: block;
+        }
     }
 }
