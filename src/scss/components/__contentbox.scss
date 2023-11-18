@@ -1,0 +1,19 @@
+@import '../layouts/_mixins';
+.content_box {
+    min-height: 350px;
+
+    .content-title {
+        margin-bottom: 2rem;
+        font-weight: 600;
+        line-height: 5rem;
+        max-width: 76%;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+
+    .content_area{
+        @include dflex_params(inline-flex,flex-start,center,column)
+    }
+}

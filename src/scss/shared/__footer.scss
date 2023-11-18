@@ -1,0 +1,23 @@
+footer{
+    *{
+        color: rgba(255,255,255,0.7);
+    }
+
+    ul{
+        margin: 1.5rem 0 3rem;
+        li{
+            margin-bottom: 1rem;
+            a{
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &.without_login{
+        padding-bottom: 7rem;
+    }
+
+    .netflix_loc{
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,181 @@
+@import '../../scss/layouts/_mixins';
+@import '../../scss/layouts/_varriables';
+
+
+// Banner css
+.banner {
+    height: 100vh;
+    padding-top: 6.5rem;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    }
+
+    .container {
+        height: calc(100vh - 65px);
+    }
+
+    .banner_content {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        @include dflex_params(flex, center, center, column);
+
+        .banner-title {
+            text-align: center;
+            font-weight: 600;
+            max-width: 80%;
+            line-height: 5.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .second-title {
+            margin-bottom: 2rem;
+        }
+
+
+        .signinform {
+            margin-top: 2.5rem;
+        }
+    }
+}
+
+
+// Content Box CSS
+.content_box {
+
+    // tv frame
+    .tv {
+        max-width: 80%;
+        margin: 0 0 0 auto;
+        position: relative;
+
+        img {
+            position: relative;
+            z-index: 1;
+        }
+
+        .video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(calc(-50% - 2px)) translateY(calc(-69% - 1px));
+            width: calc(75% - 9px);
+
+            video {
+                width: 100%;
+            }
+        }
+    }
+
+    // mobile frame
+    .mobile {
+        max-width: 50%;
+        margin: 0 auto;
+        position: relative;
+
+        .movie_info {
+            @include dflex_params(flex, center, flex-start, row);
+            border: 3px solid #232323;
+            border-radius: 6px;
+            overflow: hidden;
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            width: calc(100% + 5rem);
+            padding: 5px;
+            background: black;
+            transform: translateX(-50%);
+
+            figure {
+                margin: 0;
+
+                img {
+                    width: 5rem;
+                }
+            }
+
+            .mob_content {
+                @include dflex_params(flex, flex-start, flex-start, column);
+                width: calc(100% - 5rem);
+                padding-left: 1rem;
+
+                strong {
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    margin-bottom: 0.2rem;
+                }
+
+                span {
+                    font-size: 1.3rem;
+                    color: $secondary;
+                }
+            }
+
+            .download_icon {
+                width: 5rem;
+                height: 5rem;
+                background-size: contain;
+                position: absolute;
+                top: 50%;
+                right: 0.5rem;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    // devices frame
+    .devices {
+        max-width: 80%;
+        margin: 0 0 0 auto;
+        position: relative;
+
+        img {
+            position: relative;
+            z-index: 1;
+        }
+
+        .video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(calc(-50% - 2px)) translateY(calc(-87% - 1px));
+            width: calc(63% - 8px);
+
+            video {
+                width: 100%;
+            }
+        }
+    }
+
+    // kids frame
+    .kids {
+        max-width: 80%;
+        margin: 0 0 0 auto;
+        position: relative;
+
+        img {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+
+// FAQ Section CSS
+.faq_section {
+    .content-title {
+        margin-bottom: 3.5rem;
+    }
+
+    .ready_watch {
+        margin-top: 5rem;
+    }
+}

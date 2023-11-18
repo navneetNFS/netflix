@@ -1,0 +1,22 @@
+// Material Form
+.material_input {
+    background: rgba(22, 22, 22, 0.5);
+    border: 1px solid #2bb871 !important;
+    border-radius: 6px;
+    label{
+        color: rgba(255, 255, 255, 0.7) !important;
+        font-size: 1.6rem;
+    }
+    input{
+        font-size: 1.6rem;
+        color: #fff;
+    }
+
+    &.not_outline{
+       .MuiInputBase-root{
+        &:after{
+            border-color: transparent !important;
+        }
+       } 
+    }
+}

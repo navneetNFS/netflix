@@ -1,0 +1,6 @@
+@mixin dflex_params($flex_type,$align,$justify,$flow){
+    display: $flex_type;
+    align-items: $align;
+    justify-content: $justify;
+    flex-flow: $flow wrap;
+}

@@ -1,0 +1,23 @@
+@import '../layouts/_mixins';
+header {
+    // Common CSS
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    .logo {
+        width: 148px;
+    }
+    
+
+    // Before Login Header
+    &.header_before_log {
+        position: absolute;
+        top: 2.5rem;
+
+        .right_portion{
+            @include dflex_params(inline-flex,center,flex-end,row)
+        }
+    }
+}

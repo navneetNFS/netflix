@@ -1,0 +1,14 @@
+.border-area {
+    background: transparent;
+    height: 7rem;
+    border-top: 8px solid $secondBgs;
+
+    &.bottom{
+        border-top: 0px;
+        border-bottom: 8px solid $secondBgs;
+    }
+
+    &.bw-0{
+        border: 0 !important;
+    }
+}

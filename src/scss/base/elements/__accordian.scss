@@ -1,0 +1,38 @@
+.accordion{
+    .accordion-item{
+        border: 0;
+        margin-bottom: 1rem;
+        .accordion-header{
+            .accordion-button{
+                background-color: $secondBgs;
+                color: #fff;
+                font-size: 1.8rem;
+                padding: 2.5rem;
+                border-radius: 0;
+                outline: none !important;
+                box-shadow: none !important;
+                &:after{
+                    content: "\f067";
+                    font-family: FontAwesome;
+                }
+
+                &:not(.collapsed)::after{
+                    content: "\f00d";
+                }
+            }
+        }
+
+        .accordion-body{
+            background-color: $secondBgs;
+            color: #fff;
+            border-top: 1px solid #000;
+            font-size: 1.8rem;
+            padding: 2.5rem;
+        }
+        
+        &:last-child{
+            margin-bottom: 0;
+        }
+        
+    }
+}
